@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
+             xmlns:pages="clr-namespace:SelfMonitoringApp.Pages"
+             x:Class="SelfMonitoringApp.Pages.MainPage"
+
+             NavigationPage.HasNavigationBar="True"
+             NavigationPage.HasBackButton="False"
+             Title="Log Yourself"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame Padding="0" Margin="10,20,10,0" BorderColor="Black">
+                    <Frame BackgroundColor="{StaticResource FrameBackground}" Padding="5">
+                        <StackLayout>
+                      
+                            <Grid Grid.Row="1" HeightRequest="500">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width=".2*"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="10"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Frame Grid.ColumnSpan="4" Margin="10" Padding="0" BorderColor="Black"  BackgroundColor="{StaticResource PrimaryLight}" >
+                                    <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="18" TextColor="Black">Create a new log</Label>
+                                </Frame>
+
+                                <!--Mood Log Button-->
+                                <Image Grid.Row="1" Grid.Column="1" Source="twotone_psychology_black_48dp.png"/>
+                                <Button Grid.Row="1" Grid.Column="2" Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.MoodEditor}" Text="Mood"
+                                        AutomationId="go_mood" Style="{StaticResource ButtonStyle}" />
+                                
+                                <!--Socialization Log Button-->
+                                <Image Grid.Row="2" Grid.Column="1" Source="baseline_groups_black_48dp.png"/>
+                                <Button Grid.Row="2" Grid.Column="2" Text="Socialization" AutomationId="go_social"
+                                      Style="{StaticResource ButtonStyle}" Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.SocializationEditor}"/>
+
+                                <!--Meal Log Button-->
+                                <Image Grid.Row="3" Grid.Column="1" Source="twotone_restaurant_menu_black_48dp.png" />
+                                <Button Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.MealEditor}" AutomationId="go_meal"
+                                        Grid.Row="3" Grid.Column="2" Style="{StaticResource ButtonStyle}" Text="Meal"/>
+
+                                <!--Sleep Log Button-->
+                                <Image  Grid.Row="4" Grid.Column="1" Source="twotone_hotel_black_48dp.png"/>
+                                <Button Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.SleepEditor}" AutomationId="go_sleep" Text="Sleep"
+                                        Grid.Row="4" Grid.Column="2" Style="{StaticResource ButtonStyle}"/>
+
+                                <!--Activity Log Button-->
+                                <Image Grid.Row="5" Grid.Column="1" Source= "twotone_nature_people_black_48dp.png"/>
+                                <Button Command="{Binding NavigateCommand}"  CommandParameter="{x:Static pages:PageNames.ActivityEditor}" AutomationId="go_activity" Text="Activity"
+                                        Grid.Row="5" Grid.Column="2" Style="{StaticResource ButtonStyle}" />
+
+                                <!--Substance Log Button-->
+                                <Image Grid.Row="6" Grid.Column="1" Source="twotone_local_bar_black_48dp.png"/>
+                                <Button Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.SubstanceEditor}" AutomationId="go_substance" Text="Substance"
+                                        Grid.Row="6" Grid.Column="2" Style="{StaticResource ButtonStyle}" />
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+
+                <controls:HeaderBlock Margin="10" HeaderText="Features">
+                    <Frame BackgroundColor ="#eeee" BorderColor="Black">
+
+                        <Grid Grid.Row="1" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".2*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="twotone_menu_book_black_48dp.png"/>
+                            <Button Grid.Row="0" Grid.Column="1" Style="{StaticResource ButtonStyle}" Command="{Binding NavigateCommand}" 
+                                    CommandParameter="{x:Static pages:PageNames.RawLogViewer}" AutomationId="go_logs" Margin="3" Text="View Logs" />
+
+                            <Image Grid.Row="1" Source="twotone_multiline_chart_black_48dp.png"/>
+                            <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource ButtonStyle}"   Command="{Binding NavigateCommand}"
+                                AutomationId="go_trends" CommandParameter="{x:Static pages:PageNames.TrendsViewer}" Margin="3" Text="Trends" HeightRequest="20"/>
+
+                            <Image Source="twotone_settings_black_48dp.png" Grid.Row="2"/>
+                            <Button Grid.Row="2" Grid.Column="1" AutomationId="go_settings" Text="Settings" Margin="3" 
+                                    Style="{StaticResource ButtonStyle}" Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.Settings}"/>
+
+                            <Image Grid.Row="3" Source="twotone_flag_black_48dp.png"/>
+                            <Button Grid.Row="3" Grid.Column="1"  AutomationId="go_data" 
+                                Style="{StaticResource ButtonStyle}" Command="{Binding GoalsCommand}" CommandParameter="data" Margin="3" Text="Goals" MinimumHeightRequest="150"/>
+
+                            <Image Grid.Row="4" Source="twotone_notifications_black_48dp.png"/>
+                            <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource ButtonStyle}" AutomationId="go_notifications" Command="{Binding NavigateCommand}" 
+                                    CommandParameter="{x:Static pages:PageNames.NotificationsViewer}" Margin="3"  MinimumHeightRequest="150" Text="Notifications"/>
+                        </Grid>
+                    </Frame>
+                </controls:HeaderBlock>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
+             xmlns:services="clr-namespace:SelfMonitoringApp.Services"
+             mc:Ignorable="d"
+             x:Class="SelfMonitoringApp.Pages.NotificationsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <controls:BoolInverterConverter x:Key="boolInverter"/>
+ 
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid Margin="8">
+            <controls:HeaderBlock HeaderText="Existing Notifcations">
+                <Frame BorderColor="Black" Padding="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <CollectionView ItemsSource="{Binding Notifications}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Frame BorderColor="Black" BackgroundColor="White" Margin="5">
+                                            <StackLayout>
+                                                <Grid>
+                                                    <Label Style="{StaticResource InnerLabelStyle}">Targets</Label>
+                                                    <Label Text="{Binding ModelTarget}" Grid.Column="1" HorizontalTextAlignment="Start" Style="{StaticResource InnerLabelStyle}"></Label>
+                                                </Grid>
+                                                <Grid>
+                                                    <Label Style="{StaticResource InnerLabelStyle}">Message:</Label>
+                                                    <Label Text="{Binding Message}" Grid.Column="1" HorizontalTextAlignment="Start" Style="{StaticResource InnerLabelStyle}"></Label>
+                                                </Grid>
+                                                <Grid>
+                                                    <Label Style="{StaticResource InnerLabelStyle}">Vibrate:</Label>
+                                                    <CheckBox IsChecked="{Binding Vibrate}" Grid.Column="1"></CheckBox>
+                                                </Grid>
+                                                <Grid IsVisible="{Binding IsPeriodic}">
+                                                    <Label Style="{StaticResource InnerLabelStyle}">Vibrate:</Label>
+                                                    <CheckBox IsChecked="{Binding Vibrate}" Grid.Column="1"></CheckBox>
+                                                </Grid>
+                                            </StackLayout>
+                                        </Frame>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                        <Grid Grid.Row="1">
+                            <Button Grid.Column="0" Margin="5,0,0,5" Style="{StaticResource ButtonStyle}" Command="{Binding DeleteNotificationCommand}" BorderColor="Black" Text="Delete"/>
+                            <Button Grid.Column="1" Margin="0,0,5,5" Style="{StaticResource ButtonStyle}" Command="{Binding AddNewNotificationCommand}" BorderColor="Black" Text="Add"/>
+                            <Button Grid.Column="2" Margin="0,0,5,5" Style="{StaticResource ButtonStyle}" Command="{Binding EditNotificationCommand}" BorderColor="Black" Text="Edit"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+            </controls:HeaderBlock>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
