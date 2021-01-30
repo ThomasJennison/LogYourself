@@ -1,9 +1,9 @@
 ﻿
-using SelfMonitoringApp.Models;
-using SelfMonitoringApp.Models.Base;
-using SelfMonitoringApp.Services;
-using SelfMonitoringApp.Services.Navigation;
-using SelfMonitoringApp.ViewModels.Base;
+using LogYourself.Models;
+using LogYourself.Models.Base;
+using LogYourself.Services;
+using LogYourself.Services.Navigation;
+using LogYourself.ViewModels.Base;
     
 using System;
 using System.Collections.ObjectModel;

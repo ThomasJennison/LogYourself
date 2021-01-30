@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json.Bson;
-using SelfMonitoringApp.Models;
-using SelfMonitoringApp.Models.Base;
-using SelfMonitoringApp.Services;
-using SelfMonitoringApp.Services.Navigation;
-using SelfMonitoringApp.ViewModels.Base;
+using LogYourself.Models;
+using LogYourself.Models.Base;
+using LogYourself.Services;
+using LogYourself.Services.Navigation;
+using LogYourself.ViewModels.Base;
 using Splat;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     class NotificationEditorViewModel : ViewModelBase, INavigationViewModel
     {

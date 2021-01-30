@@ -1,7 +1,7 @@
-﻿using SelfMonitoringApp.Models;
-using SelfMonitoringApp.Models.Base;
-using SelfMonitoringApp.ViewModels.Base;
-using SelfMonitoringApp.ViewModels.Logs;
+﻿using LogYourself.Models;
+using LogYourself.Models.Base;
+using LogYourself.ViewModels.Base;
+using LogYourself.ViewModels.Logs;
 
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     public class DaySummaryViewModel : ViewModelBase, INavigationViewModel
     {

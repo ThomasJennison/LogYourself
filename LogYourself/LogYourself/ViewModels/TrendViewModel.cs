@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     class TrendViewModel
     {

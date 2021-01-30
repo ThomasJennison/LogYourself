@@ -1,16 +1,16 @@
-﻿using SelfMonitoringApp.ViewModels.Base;
-using SelfMonitoringApp.ViewModels.Logs;
+﻿using LogYourself.ViewModels.Base;
+using LogYourself.ViewModels.Logs;
 using System;
 
 using System.IO;
 
 using Xamarin.Forms;
 
-using SelfMonitoringApp.Pages;
+using LogYourself.Pages;
 using System.Threading.Tasks;
 
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     public class MainViewModel : ViewModelBase, INavigationViewModel
     {

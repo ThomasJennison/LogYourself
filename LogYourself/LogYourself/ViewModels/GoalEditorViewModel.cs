@@ -1,6 +1,6 @@
-﻿using SelfMonitoringApp.ViewModels.Base;
+﻿using LogYourself.ViewModels.Base;
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     public class GoalEditorViewModel : ViewModelBase, INavigationViewModel
     {

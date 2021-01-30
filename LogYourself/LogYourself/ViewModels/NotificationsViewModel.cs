@@ -1,7 +1,7 @@
-﻿using SelfMonitoringApp.Models;
-using SelfMonitoringApp.Models.Base;
-using SelfMonitoringApp.Services;
-using SelfMonitoringApp.ViewModels.Base;
+﻿using LogYourself.Models;
+using LogYourself.Models.Base;
+using LogYourself.Services;
+using LogYourself.ViewModels.Base;
 using Splat;
 using System;
 using System.Collections.ObjectModel;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     class NotificationsViewModel : ViewModelBase, INavigationViewModel
     {

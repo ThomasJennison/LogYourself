@@ -1,7 +1,7 @@
-﻿using SelfMonitoringApp.Models;
-using SelfMonitoringApp.Models.Base;
-using SelfMonitoringApp.ViewModels.Base;
-using SelfMonitoringApp.ViewModels.Logs;
+﻿using LogYourself.Models;
+using LogYourself.Models.Base;
+using LogYourself.ViewModels.Base;
+using LogYourself.ViewModels.Logs;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     public class TrendsViewModel : ViewModelBase, INavigationViewModel
     {

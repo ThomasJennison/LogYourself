@@ -1,5 +1,5 @@
-﻿using SelfMonitoringApp.Models;
-using SelfMonitoringApp.ViewModels.Base;
+﻿using LogYourself.Models;
+using LogYourself.ViewModels.Base;
 
 using System;
 using System.Collections.Generic;
@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using System.Linq;
 
 using Xamarin.Forms;
-using SelfMonitoringApp.Models.Base;
+using LogYourself.Models.Base;
 
-namespace SelfMonitoringApp.ViewModels
+namespace LogYourself.ViewModels
 {
     public class DataExplorerViewModel : ViewModelBase, INavigationViewModel
     {
