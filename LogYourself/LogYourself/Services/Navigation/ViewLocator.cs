@@ -1,8 +1,8 @@
-﻿using SelfMonitoringApp.ViewModels.Base;
+﻿using LogYourself.ViewModels.Base;
 using System;
 using Xamarin.Forms;
 
-namespace SelfMonitoringApp.Services.Navigation
+namespace LogYourself.Services.Navigation
 {
     public class ViewLocator : IViewLocator
     {

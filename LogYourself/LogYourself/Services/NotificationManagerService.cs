@@ -1,12 +1,12 @@
 ﻿using Newtonsoft.Json;
-using SelfMonitoringApp.Models;
+using LogYourself.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace SelfMonitoringApp.Services
+namespace LogYourself.Services
 {
     public class NotificationManagerService : INotificationManagerService
     {

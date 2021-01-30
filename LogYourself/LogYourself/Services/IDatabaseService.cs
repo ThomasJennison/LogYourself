@@ -1,10 +1,10 @@
-﻿using SelfMonitoringApp.Models;
-using SelfMonitoringApp.Models.Base;
+﻿using LogYourself.Models;
+using LogYourself.Models.Base;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SelfMonitoringApp.Services
+namespace LogYourself.Services
 {
     public interface IDatabaseService
     {

@@ -1,10 +1,10 @@
-﻿using SelfMonitoringApp.ViewModels.Base;
+﻿using LogYourself.ViewModels.Base;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfMonitoringApp.Services.Navigation
+namespace LogYourself.Services.Navigation
 {
     public interface INavigationService
     {

@@ -1,4 +1,4 @@
-﻿using SelfMonitoringApp.ViewModels.Base;
+﻿using LogYourself.ViewModels.Base;
 
 using System.Threading.Tasks;
 using System.Linq;
@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using System;
 
 
-namespace SelfMonitoringApp.Services.Navigation
+namespace LogYourself.Services.Navigation
 {
     public class NavigationService : INavigationService
     {

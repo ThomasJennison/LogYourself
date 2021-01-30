@@ -1,4 +1,4 @@
-﻿namespace SelfMonitoringApp.Services
+﻿namespace LogYourself.Services
 {
     public enum SuggestionTypes
     {

@@ -1,8 +1,8 @@
-﻿using SelfMonitoringApp.Models;
+﻿using LogYourself.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace SelfMonitoringApp.Services
+namespace LogYourself.Services
 {
     public interface ISuggestionService
     {

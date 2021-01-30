@@ -1,4 +1,4 @@
-﻿using SelfMonitoringApp.Models;
+﻿using LogYourself.Models;
 using SQLite;
 
 using System.Collections.Generic;
@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.IO;
 using System;
 using Splat;
-using SelfMonitoringApp.Models.Base;
+using LogYourself.Models.Base;
 using System.Linq;
 
-namespace SelfMonitoringApp.Services
+namespace LogYourself.Services
 {
     public class LocalSqlDatabaseService : IDatabaseService, IEnableLogger
     {

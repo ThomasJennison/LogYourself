@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace SelfMonitoringApp.Services.Navigation
+namespace LogYourself.Services.Navigation
 {
     public interface IHaveMainPage
     {

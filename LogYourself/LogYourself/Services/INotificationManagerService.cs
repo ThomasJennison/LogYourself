@@ -1,7 +1,7 @@
-﻿using SelfMonitoringApp.Models;
+﻿using LogYourself.Models;
 using System;
 
-namespace SelfMonitoringApp.Services
+namespace LogYourself.Services
 {
     interface INotificationManagerService
     {

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using SelfMonitoringApp.Models;
+using LogYourself.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,7 +11,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using Xamarin.Forms;
 
-namespace SelfMonitoringApp.Services
+namespace LogYourself.Services
 {
     public class SuggestionService : ISuggestionService
     {
