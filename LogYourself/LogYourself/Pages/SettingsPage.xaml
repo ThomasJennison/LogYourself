@@ -6,9 +6,9 @@
              mc:Ignorable="d"
              Title="Settings"
              NavigationPage.HasNavigationBar="True"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
-             xmlns:models ="clr-namespace:SelfMonitoringApp.Models.Base"
-             x:Class="SelfMonitoringApp.Pages.SettingsPage">
+             xmlns:controls="clr-namespace:LogYourself.Controls"
+             xmlns:models ="clr-namespace:LogYourself.Models.Base"
+             x:Class="LogYourself.Pages.SettingsPage">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="0,8,0,0">

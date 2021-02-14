@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SelfMonitoringApp.Models.Base
+namespace LogYourself.Models.Base
 {
     public interface IModel
     {

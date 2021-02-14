@@ -6,15 +6,12 @@
              mc:Ignorable="d"
              NavigationPage.HasNavigationBar="True"
              Title="View Data"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
-             xmlns:models ="clr-namespace:SelfMonitoringApp.Models.Base"
+             xmlns:controls="clr-namespace:LogYourself.Controls"
+             xmlns:models ="clr-namespace:LogYourself.Models.Base"
              BackgroundColor="White"
-             x:Class="SelfMonitoringApp.Pages.DataExplorerPage">
+             x:Class="LogYourself.Pages.DataExplorerPage">
     <ContentPage.Resources>
-        <GridLength x:Key="EditDeleteHeght">40</GridLength>
-        <GridLength x:Key="CollectionHeaderHeight">30</GridLength>
-        <GridLength x:Key="ColumnNameHeight">30</GridLength>
-        <GridLength x:Key="ColumnNameHeightDouble">30</GridLength>
+   
 
         <controls:BoolInverterConverter x:Key="boolInverter"/>
 
@@ -52,7 +49,7 @@
                                 </Grid.RowDefinitions>
                                 <Grid Grid.Column="0">
                                     <Label Text="Time" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                    <Label Text="{Binding RegisteredTime, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                    <Label Text="{Binding RegisteredTime}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                 </Grid>
 
@@ -105,19 +102,19 @@
                                 <Grid>
                                     <Grid Grid.Column="0">
                                         <Label Text="Start" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding StartTime, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding StartTime}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
 
                                     <Grid Grid.Column="1">
                                         <Label Text="End" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding EndTime, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding EndTime}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
 
                                     <Grid Grid.Column="2">
                                         <Label Text="Total" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding Duration, StringFormat='{0:F2} hours'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding Duration}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
                                 </Grid>
@@ -174,19 +171,19 @@
                                 <Grid>
                                     <Grid Grid.Column="0">
                                         <Label Text="Start" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding StartTime, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding StartTime}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
 
                                     <Grid Grid.Column="1">
                                         <Label Text="End" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding EndTime, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding EndTime}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
 
                                     <Grid Grid.Column="2">
                                         <Label Text="Total" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding Duration, StringFormat='{0:F2} hours'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding Duration}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
                                 </Grid>
@@ -252,7 +249,7 @@
                                 <Grid>
                                     <Grid Grid.Column="0">
                                         <Label Text="Time" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding RegisteredTime, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding RegisteredTime}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
 
@@ -319,19 +316,19 @@
                                 <Grid>
                                     <Grid Grid.Column="0">
                                         <Label Text="Start" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding SleepStartDate, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding SleepStartDate}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
 
                                     <Grid Grid.Column="1">
                                         <Label Text="End" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding SleepEndDate, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding SleepEndDate}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
 
                                     <Grid Grid.Column="2">
                                         <Label Text="Total" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                        <Label Text="{Binding TotalSleep, StringFormat='{0:F2} hours'}" HorizontalOptions="CenterAndExpand" 
+                                        <Label Text="{Binding TotalSleep}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                     </Grid>
                                 </Grid>
@@ -388,7 +385,7 @@
                                 <!--Time-->
                                 <Grid Grid.Column="0">
                                     <Label Text="Time" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource HeaderLabel}"/>
-                                    <Label Text="{Binding RegisteredTime, StringFormat='{0:hh:mm tt}'}" HorizontalOptions="CenterAndExpand" 
+                                    <Label Text="{Binding RegisteredTime}" HorizontalOptions="CenterAndExpand" 
                                                                                        VerticalOptions="Start" Style="{StaticResource InnerLabelStyle}" Grid.Row="1"/>
                                 </Grid>
 

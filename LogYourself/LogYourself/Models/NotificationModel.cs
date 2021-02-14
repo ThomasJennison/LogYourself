@@ -1,10 +1,11 @@
-﻿using SelfMonitoringApp.Models.Base;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace SelfMonitoringApp.Models
+using LogYourself.Models.Base;
+
+namespace LogYourself.Models
 {
     public class NotificationModel : IModel
     {

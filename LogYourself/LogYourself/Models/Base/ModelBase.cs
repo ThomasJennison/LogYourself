@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 using SQLite;
 using System;
 
-namespace SelfMonitoringApp.Models.Base
+namespace LogYourself.Models.Base
 {
     public abstract class LogModelBase
     {

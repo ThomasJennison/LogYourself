@@ -1,4 +1,4 @@
-﻿namespace SelfMonitoringApp.Pages
+﻿namespace LogYourself.Pages
 {
     public enum PageNames
     {

@@ -1,4 +1,4 @@
-﻿using SelfMonitoringApp.Models.Base;
+﻿using LogYourself.Models.Base;
 using System;
 
 namespace LogYourself.Models

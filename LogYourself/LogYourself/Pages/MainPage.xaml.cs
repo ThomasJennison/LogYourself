@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace SelfMonitoringApp.Pages
+namespace LogYourself.Pages
 {
     public partial class MainPage : ContentPage
     {

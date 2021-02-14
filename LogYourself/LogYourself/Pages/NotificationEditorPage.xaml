@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
-             xmlns:modelBase="clr-namespace:SelfMonitoringApp.Models.Base"
+             xmlns:controls="clr-namespace:LogYourself.Controls"
+             xmlns:modelBase="clr-namespace:LogYourself.Models.Base"
              NavigationPage.HasNavigationBar="False"
              mc:Ignorable="d"
-             x:Class="SelfMonitoringApp.Pages.NotificationEditorPage">
+             x:Class="LogYourself.Pages.NotificationEditorPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <controls:BoolInverterConverter x:Key="BoolInvert"/>

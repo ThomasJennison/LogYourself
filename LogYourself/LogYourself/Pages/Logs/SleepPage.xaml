@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
+             xmlns:controls="clr-namespace:LogYourself.Controls"
              mc:Ignorable="d"
              NavigationPage.HasNavigationBar="True"
              Title="Log Sleep"
              Background="White"
-             x:Class="SelfMonitoringApp.Pages.Logs.SleepPage">
+             x:Class="LogYourself.Pages.Logs.SleepPage">
     <ContentPage.Content>
         <controls:SaveCancelPage CancelCommand="{Binding BackCommand}" PageName="Sleep" SaveCommand="{Binding SaveLogCommand}">
             <Grid>

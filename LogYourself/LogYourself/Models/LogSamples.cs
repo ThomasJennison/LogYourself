@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
 
-namespace SelfMonitoringApp.Models
+namespace LogYourself.Models
 {
     public static class LogSamples
     {

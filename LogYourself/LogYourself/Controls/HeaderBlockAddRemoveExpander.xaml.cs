@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using SelfMonitoringApp.Services;
+using LogYourself.Services;
 
-namespace SelfMonitoringApp.Controls
+namespace LogYourself.Controls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HeaderBlockAddRemoveExpander : Frame

@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:models ="clr-namespace:SelfMonitoringApp.Models.Base"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
+             xmlns:models ="clr-namespace:LogYourself.Models.Base"
+             xmlns:controls="clr-namespace:LogYourself.Controls"
              mc:Ignorable="d"
-             x:Class="SelfMonitoringApp.Controls.LogView">
+             x:Class="LogYourself.Controls.LogView">
     <ContentView.ControlTemplate>
         <ControlTemplate>
            

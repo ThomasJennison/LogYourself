@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:services="clr-namespace:SelfMonitoringApp.Services"
+             xmlns:services="clr-namespace:LogYourself.Services"
              mc:Ignorable="d"
              Title="Log an activity"
              Background="White"
              NavigationPage.HasNavigationBar="True"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
-             x:Class="SelfMonitoringApp.Pages.Logs.ActivityPage">
+             xmlns:controls="clr-namespace:LogYourself.Controls"
+             x:Class="LogYourself.Pages.Logs.ActivityPage">
     <ContentPage.Content>
         <controls:SaveCancelPage SaveCommand="{Binding SaveLogCommand}" CancelCommand="{Binding BackCommand}"  PageName="Activity">
             <Grid>
@@ -46,7 +46,7 @@
                 <!--Total sleep box-->
                 <controls:HeaderBlock HeaderText="Total Time" Grid.Row="1">
                     <Frame Style="{StaticResource InnerFrameStyle}">
-                        <Label Text="{Binding Duration , StringFormat ='{0:N2} Hours'}" Style="{StaticResource  InnerLabelStyle}" TextColor="Black"/>
+                        <Label Text="{Binding Duration}" Style="{StaticResource  InnerLabelStyle}" TextColor="Black"/>
                     </Frame>
                 </controls:HeaderBlock>
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SelfMonitoringApp.Pages
+namespace LogYourself.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DataExplorerPage : ContentPage

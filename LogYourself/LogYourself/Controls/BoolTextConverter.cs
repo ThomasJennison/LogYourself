@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Text;
 using Xamarin.Forms;
 
-namespace SelfMonitoringApp.Controls
+namespace LogYourself.Controls
 {
     public class BoolTextConverter : IValueConverter
     {

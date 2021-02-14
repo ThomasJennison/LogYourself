@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SelfMonitoringApp.Models.Base
+namespace LogYourself.Models.Base
 {
     [AttributeUsage(AttributeTargets.All)]
     public class ModelTypeAttribute : Attribute

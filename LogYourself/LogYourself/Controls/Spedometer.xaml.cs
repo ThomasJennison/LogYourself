@@ -8,7 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Runtime.CompilerServices;
 
-namespace SelfMonitoringApp.Controls
+namespace LogYourself.Controls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Spedometer : ContentView

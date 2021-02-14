@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SelfMonitoringApp.Pages.Logs
+namespace LogYourself.Pages.Logs
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MoodPage : ContentPage

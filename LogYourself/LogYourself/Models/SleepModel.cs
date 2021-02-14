@@ -1,7 +1,7 @@
-﻿using SelfMonitoringApp.Models.Base;
+﻿using LogYourself.Models.Base;
 using System;
 
-namespace SelfMonitoringApp.Models
+namespace LogYourself.Models
 {
     public class SleepModel: LogModelBase , IModel
     {

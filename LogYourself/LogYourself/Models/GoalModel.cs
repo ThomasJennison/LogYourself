@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SelfMonitoringApp.Models
+namespace LogYourself.Models
 {
     public class GoalModel
     {

@@ -1,9 +1,9 @@
-﻿using SelfMonitoringApp.Models.Base;
+﻿using LogYourself.Models.Base;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SelfMonitoringApp.Controls
+namespace LogYourself.Controls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LogView : ContentView

@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
-             xmlns:services="clr-namespace:SelfMonitoringApp.Services"
+             xmlns:controls="clr-namespace:LogYourself.Controls"
+             xmlns:services="clr-namespace:LogYourself.Services"
              mc:Ignorable="d"
-             x:Class="SelfMonitoringApp.Pages.NotificationsPage">
+             x:Class="LogYourself.Pages.NotificationsPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <controls:BoolInverterConverter x:Key="boolInverter"/>

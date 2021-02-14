@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Security.Cryptography;
-using System.Text;
 
-namespace SelfMonitoringApp.Models
+namespace LogYourself.Models
 {
     public class NotificationHolder
     {

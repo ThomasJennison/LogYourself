@@ -1,5 +1,4 @@
-﻿using SelfMonitoringApp.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SelfMonitoringApp.Pages
+namespace LogYourself.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TrendsPage : ContentPage

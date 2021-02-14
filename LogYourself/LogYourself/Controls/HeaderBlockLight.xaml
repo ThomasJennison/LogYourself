@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelfMonitoringApp.Controls.HeaderBlockLight">
+             x:Class="LogYourself.Controls.HeaderBlockLight">
     <ContentView.ControlTemplate>
         <ControlTemplate>
             <Frame BackgroundColor="{StaticResource Primary}" Padding="10,3,10,10" CornerRadius="10" 

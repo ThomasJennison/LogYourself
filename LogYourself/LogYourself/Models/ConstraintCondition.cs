@@ -1,4 +1,4 @@
-﻿namespace SelfMonitoringApp.Models
+﻿namespace LogYourself.Models
 {
     public enum ConstraintCondition
     {

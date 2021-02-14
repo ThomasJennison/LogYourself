@@ -1,9 +1,7 @@
-﻿using SelfMonitoringApp.Models.Base;
+﻿using LogYourself.Models.Base;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace SelfMonitoringApp.Models
+namespace LogYourself.Models
 {
     public class SocializationModel : LogModelBase, IModel
     {

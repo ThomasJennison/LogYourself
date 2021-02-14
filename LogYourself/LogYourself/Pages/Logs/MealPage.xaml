@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:SelfMonitoringApp.Controls"
-             xmlns:services="clr-namespace:SelfMonitoringApp.Services"
+             xmlns:controls="clr-namespace:LogYourself.Controls"
+             xmlns:services="clr-namespace:LogYourself.Services"
              mc:Ignorable="d"
              NavigationPage.HasNavigationBar="True"
              Title="Log a meal"
-             x:Class="SelfMonitoringApp.Pages.Logs.MealPage">
+             x:Class="LogYourself.Pages.Logs.MealPage">
     <ContentPage.Content>
         <controls:SaveCancelPage CancelCommand="{Binding BackCommand}" PageName="Meal" SaveCommand="{Binding SaveLogCommand}">
             <Grid>

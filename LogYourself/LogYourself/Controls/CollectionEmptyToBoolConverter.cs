@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using Xamarin.Forms;
 
-namespace SelfMonitoringApp.Controls
+namespace LogYourself.Controls
 {
     public class CollectionEmptyToBoolConverter : IValueConverter
     {

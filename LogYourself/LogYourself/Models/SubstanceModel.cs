@@ -1,6 +1,6 @@
-﻿using SelfMonitoringApp.Models.Base;
+﻿using LogYourself.Models.Base;
 
-namespace SelfMonitoringApp.Models
+namespace LogYourself.Models
 {
     public class SubstanceModel : LogModelBase, IModel
     {
