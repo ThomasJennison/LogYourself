@@ -1,7 +1,7 @@
 ﻿using LogYourself.Models;
 using LogYourself.Models.Base;
 using LogYourself.Services;
-using LogYourself.Services.Navigation;
+
 using LogYourself.ViewModels.Base;
 
 using System;
@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels.Logs
 {
-    public class MoodViewModel : ViewModelBase, INavigationViewModel
+    public class MoodViewModel : ViewModelBase
     {
         private readonly MoodModel _mood;
         public const string NavigationNodeName = "mood";
@@ -102,8 +102,7 @@ namespace LogYourself.ViewModels.Logs
         }
         #endregion
 
-        public MoodViewModel(IModel existingModel = null, INavigationService nav = null, IDatabaseService db = null)
-            : base(nav, db)
+        public MoodViewModel(IModel existingModel = null, IDatabaseService db = null): base(db)
         {
             if (existingModel is null) // New Log
             {
@@ -143,7 +142,6 @@ namespace LogYourself.ViewModels.Logs
             );
 
             await _database.AddOrModifyModelAsync(_mood);
-            await _navigator.NavigateBack();
             ModelShed?.Invoke(this, new ModelShedEventArgs(_mood));
         }
     }

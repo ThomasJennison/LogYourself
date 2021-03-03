@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels
 {
-    public class TrendsViewModel : ViewModelBase, INavigationViewModel
+    public class TrendsViewModel : ViewModelBase
     {
         public TrendsViewModel()
         {

@@ -11,7 +11,7 @@ using Xamarin.Forms.Internals;
 
 namespace LogYourself.ViewModels
 {
-    class NotificationsViewModel : ViewModelBase, INavigationViewModel
+    class NotificationsViewModel : ViewModelBase
     {
         INotificationManagerService _notificationService;
         public ObservableCollection<NotificationModel> Notifications { get; set; }
@@ -57,7 +57,6 @@ namespace LogYourself.ViewModels
         {
             _notificationEditor = new NotificationEditorViewModel();
             _notificationEditor.ModelShed += _notificationEditor_ModelShed;
-            await _navigator.NavigateTo(_notificationEditor);
         }
 
         private void _notificationEditor_ModelShed(object sender, EventArgs e)

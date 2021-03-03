@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels
 {
-    public class SettingsViewModel : ViewModelBase, INavigationViewModel
+    public class SettingsViewModel : ViewModelBase
     {
         public const string NavigationNodeName = "settings";
         public Command<ModelType> DeleteLogCommand { get; private set; }

@@ -1,7 +1,7 @@
 ﻿using LogYourself.Models;
 using LogYourself.Models.Base;
 using LogYourself.Services;
-using LogYourself.Services.Navigation;
+
 using LogYourself.ViewModels.Base;
 
 using System;
@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels.Logs
 {
-    public class SocializationViewModel : ViewModelBase, INavigationViewModel
+    public class SocializationViewModel : ViewModelBase
     {
         private readonly SocializationModel _social;
         public Command SaveLogCommand { get; private set; }
@@ -142,8 +142,7 @@ namespace LogYourself.ViewModels.Logs
         }
 
 
-        public SocializationViewModel(IModel existingModel = null, INavigationService nav = null, IDatabaseService db = null)
-            : base(nav, db)
+        public SocializationViewModel(IModel existingModel = null, IDatabaseService db = null): base(db)
         {
             if (existingModel is null)
             {
@@ -222,7 +221,6 @@ namespace LogYourself.ViewModels.Logs
             Duration = GetLength();
 
             await _database.AddOrModifyModelAsync(_social);
-            await _navigator.NavigateBack();
             ModelShed?.Invoke(this, new ModelShedEventArgs(_social));
         }
     }

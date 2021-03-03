@@ -1,7 +1,7 @@
 ﻿using LogYourself.Models;
 using LogYourself.Models.Base;
 using LogYourself.Services;
-using LogYourself.Services.Navigation;
+
 using LogYourself.ViewModels.Base;
 
 using System;
@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels.Logs
 {
-    public class SubstanceViewModel: ViewModelBase, INavigationViewModel
+    public class SubstanceViewModel : ViewModelBase
     {
         private readonly SubstanceModel _substance;
         public const string NavigationNodeName = "substance";
@@ -135,8 +135,7 @@ namespace LogYourself.ViewModels.Logs
         }
         #endregion
 
-        public SubstanceViewModel(IModel existingModel = null, INavigationService nav = null, IDatabaseService db =null)
-            : base(nav,db)
+        public SubstanceViewModel(IModel existingModel = null, IDatabaseService db =null) : base(db)
         {
             if (existingModel is null)
             {
@@ -180,7 +179,6 @@ namespace LogYourself.ViewModels.Logs
             );
 
             await _database.AddOrModifyModelAsync(_substance);
-            await _navigator.NavigateBack();
             ModelShed?.Invoke(this, new ModelShedEventArgs(_substance));
         }
     }

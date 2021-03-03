@@ -1,4 +1,5 @@
-﻿using LogYourself.ViewModels;
+﻿
+using LogYourself.ViewModels;
 using LogYourself.Views;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace LogYourself
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(SubstancePage), typeof(SubstancePage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

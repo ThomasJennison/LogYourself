@@ -30,13 +30,13 @@
 
                                 <!--Mood Log Button-->
                                 <Image Grid.Row="1" Grid.Column="1" Source="twotone_psychology_black_48dp.png"/>
-                                <Button Grid.Row="1" Grid.Column="2" Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.MoodEditor}" Text="Mood"
+                                <Button Grid.Row="1" Grid.Column="2" Text="Mood"
                                         AutomationId="go_mood" Style="{StaticResource ButtonStyle}" />
                                 
                                 <!--Socialization Log Button-->
                                 <Image Grid.Row="2" Grid.Column="1" Source="baseline_groups_black_48dp.png"/>
                                 <Button Grid.Row="2" Grid.Column="2" Text="Socialization" AutomationId="go_social"
-                                      Style="{StaticResource ButtonStyle}" Command="{Binding NavigateCommand}" CommandParameter="{x:Static pages:PageNames.SocializationEditor}"/>
+                                      Style="{StaticResource ButtonStyle}" />
 
                                 <!--Meal Log Button-->
                                 <Image Grid.Row="3" Grid.Column="1" Source="twotone_restaurant_menu_black_48dp.png" />

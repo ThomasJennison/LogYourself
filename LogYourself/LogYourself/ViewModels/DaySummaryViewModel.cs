@@ -15,7 +15,7 @@ using Xamarin.Forms.Internals;
 
 namespace LogYourself.ViewModels
 {
-    public class DaySummaryViewModel : ViewModelBase, INavigationViewModel
+    public class DaySummaryViewModel : ViewModelBase
     {
         [ModelType(ModelType.Meal)]
         public ObservableCollection<MealModel> Meals { get; private set; }
@@ -454,7 +454,6 @@ namespace LogYourself.ViewModels
 
                     _activityEditor = new ActivityViewModel(SelectedActivity);
                     _activityEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_activityEditor);
                     break;
                 case ModelType.Meal:
                     if (SelectedMeal is null)
@@ -462,7 +461,6 @@ namespace LogYourself.ViewModels
 
                     _mealEditor = new MealViewModel(SelectedMeal);
                     _mealEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_mealEditor);
                     break;
                 case ModelType.Mood:
                     if (SelectedMood is null)
@@ -470,7 +468,6 @@ namespace LogYourself.ViewModels
 
                     _moodEditor = new MoodViewModel(SelectedMood);
                     _moodEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_moodEditor);
                     break;
                 case ModelType.Sleep:
                     if (SelectedSleep is null)
@@ -478,7 +475,6 @@ namespace LogYourself.ViewModels
 
                     _sleepEditor = new SleepViewModel(SelectedSleep);
                     _sleepEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_sleepEditor);
                     break;
                 case ModelType.Substance:
                     if (SelectedSubstance is null)
@@ -486,7 +482,6 @@ namespace LogYourself.ViewModels
 
                     _substanceEditor = new SubstanceViewModel(SelectedSubstance);
                     _substanceEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_substanceEditor);
                     break;
                 case ModelType.Socialization:
                     if (SelectedSocial is null)
@@ -494,7 +489,6 @@ namespace LogYourself.ViewModels
 
                     _socialEditor = new SocializationViewModel(SelectedSocial);
                     _socialEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_socialEditor);
                     break;
             }
         }
@@ -511,32 +505,32 @@ namespace LogYourself.ViewModels
                 case ModelType.Activity:
                     _activityEditor = new ActivityViewModel();
                     _activityEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_activityEditor);
+
                     break;
                 case ModelType.Meal:
                     _mealEditor = new MealViewModel();
                     _mealEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_mealEditor);
+
                     break;
                 case ModelType.Mood:
                     _moodEditor = new MoodViewModel();
                     _moodEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_moodEditor);
+
                     break;
                 case ModelType.Sleep:
                     _sleepEditor = new SleepViewModel();
                     _sleepEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_sleepEditor);
+
                     break;
                 case ModelType.Substance:
                     _substanceEditor = new SubstanceViewModel();
                     _substanceEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_substanceEditor);
+
                     break;
                 case ModelType.Socialization:
                     _socialEditor = new SocializationViewModel();
                     _socialEditor.ModelShed += Vm_ModelShed;
-                    await _navigator.NavigateTo(_socialEditor);
+
                     break;
             }
         }

@@ -2,7 +2,7 @@
 
 namespace LogYourself.ViewModels
 {
-    public class GoalsViewModel : ViewModelBase, INavigationViewModel
+    public class GoalsViewModel : ViewModelBase
     {
         public const string NavigationNodeName = "goals";
 

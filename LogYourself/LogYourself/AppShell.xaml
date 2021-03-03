@@ -2,6 +2,8 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:LogYourself.Views"
+       xmlns:pages="clr-namespace:LogYourself.Pages"
+       xmlns:logs="clr-namespace:LogYourself.Pages.Logs"
        Title="LogYourself"
        x:Class="LogYourself.AppShell">
 
@@ -79,10 +81,11 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-    <FlyoutItem Title="About" Icon="icon_about.png">
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+    <FlyoutItem Title="Home" Icon="icon_about.png">
+        <ShellContent Route="SubstancePage" ContentTemplate="{DataTemplate local:SubstancePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Browse" Icon="icon_feed.png">
+
+    <FlyoutItem Title="Browse - Old" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
 

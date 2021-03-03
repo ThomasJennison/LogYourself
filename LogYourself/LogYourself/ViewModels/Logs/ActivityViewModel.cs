@@ -1,7 +1,6 @@
 ﻿using LogYourself.Models;
 using LogYourself.Models.Base;
 using LogYourself.Services;
-using LogYourself.Services.Navigation;
 using LogYourself.ViewModels.Base;
 
 using System;
@@ -11,7 +10,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels.Logs
 {
-    public class ActivityViewModel : ViewModelBase, INavigationViewModel
+    public class ActivityViewModel : ViewModelBase
     {
         private readonly ActivityModel _activity;
         public const string NavigationNodeName = "activity";
@@ -159,8 +158,7 @@ namespace LogYourself.ViewModels.Logs
         }
         #endregion
 
-        public ActivityViewModel(IModel existingModel = null, INavigationService nav = null, IDatabaseService db = null)
-            : base(nav, db)
+        public ActivityViewModel(IModel existingModel = null, IDatabaseService db = null): base(db)
         {
             if (existingModel is null)
             {
@@ -238,7 +236,6 @@ namespace LogYourself.ViewModels.Logs
         public async Task SaveAndPop()
         {
             await _database.AddOrModifyModelAsync(_activity);
-            await _navigator.NavigateBack();
             ModelShed?.Invoke(this, new ModelShedEventArgs(_activity));
         }
     }

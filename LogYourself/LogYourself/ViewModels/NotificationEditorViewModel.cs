@@ -2,7 +2,7 @@
 using LogYourself.Models;
 using LogYourself.Models.Base;
 using LogYourself.Services;
-using LogYourself.Services.Navigation;
+
 using LogYourself.ViewModels.Base;
 using Splat;
 using System;
@@ -14,7 +14,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels
 {
-    class NotificationEditorViewModel : ViewModelBase, INavigationViewModel
+    class NotificationEditorViewModel : ViewModelBase
     {
         private NotificationModel _notification;
         private INotificationManagerService _notificationManager;
@@ -238,7 +238,6 @@ namespace LogYourself.ViewModels
             _notification.Interval = new TimeSpan(Hour, Minute, 0);
             _notification.ReminderTimes = ReminderTimes.ToList();
             _notificationManager.AddOrUpdateNotification(_notification);
-            await _navigator.NavigateBack();
             ModelShed?.Invoke(this, new ModelShedEventArgs(_notification));
         }
 

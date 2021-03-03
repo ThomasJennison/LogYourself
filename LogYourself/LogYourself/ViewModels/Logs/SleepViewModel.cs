@@ -1,7 +1,6 @@
 ﻿using LogYourself.Models;
 using LogYourself.Models.Base;
 using LogYourself.Services;
-using LogYourself.Services.Navigation;
 using LogYourself.ViewModels.Base;
 
 using System;
@@ -10,7 +9,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels.Logs
 {
-    public class SleepViewModel : ViewModelBase, INavigationViewModel
+    public class SleepViewModel : ViewModelBase
     {
         private readonly SleepModel _sleepModel;
 
@@ -144,8 +143,7 @@ namespace LogYourself.ViewModels.Logs
             }
         }
 
-        public SleepViewModel(IModel existingModel = null, INavigationService nav = null, IDatabaseService db = null)
-            : base(nav, db)
+        public SleepViewModel(IModel existingModel = null, IDatabaseService db = null): base(db)
         {
             if (existingModel is null)
                 _sleepModel = new SleepModel() { RestRating = 5 };
@@ -201,7 +199,6 @@ namespace LogYourself.ViewModels.Logs
         public async Task SaveAndPop()
         {
             await _database.AddOrModifyModelAsync(_sleepModel);
-            await _navigator.NavigateBack();
             ModelShed?.Invoke(this, new ModelShedEventArgs(_sleepModel));
         }
     }

@@ -12,7 +12,7 @@ using LogYourself.Models.Base;
 
 namespace LogYourself.ViewModels
 {
-    public class DataExplorerViewModel : ViewModelBase, INavigationViewModel
+    public class DataExplorerViewModel : ViewModelBase
     {
         public ObservableCollection<DaySummaryViewModel> DaySummaries { get; private set; }
 

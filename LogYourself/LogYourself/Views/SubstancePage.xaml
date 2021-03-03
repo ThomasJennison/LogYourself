@@ -8,7 +8,7 @@
              NavigationPage.HasNavigationBar="True"
              Title="Log Substance Use"
              xmlns:services="clr-namespace:LogYourself.Services"
-             x:Class="LogYourself.Pages.Logs.SubstancePage">
+             x:Class="LogYourself.Views.SubstancePage">
     <ContentPage.Content>
         <Grid Margin="0,3,0,0">
             <Grid.RowDefinitions>

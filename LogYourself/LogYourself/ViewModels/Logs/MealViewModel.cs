@@ -2,7 +2,7 @@
 using LogYourself.Models;
 using LogYourself.Models.Base;
 using LogYourself.Services;
-using LogYourself.Services.Navigation;
+
 using LogYourself.ViewModels.Base;
     
 using System;
@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace LogYourself.ViewModels.Logs
 {
-    public class MealViewModel : ViewModelBase, INavigationViewModel
+    public class MealViewModel : ViewModelBase
     {
         private readonly MealModel _mealModel;
         public const string NavigationNodeName = "meal";
@@ -102,8 +102,7 @@ namespace LogYourself.ViewModels.Logs
         }
         #endregion
 
-        public MealViewModel(IModel existingModel = null, INavigationService nav = null, IDatabaseService db = null)
-            : base(nav, db)
+        public MealViewModel(IModel existingModel = null, IDatabaseService db = null) : base(db)
         {
             if (existingModel is null) // Creating new log
             {
@@ -147,7 +146,6 @@ namespace LogYourself.ViewModels.Logs
             ) ;
 
             await _database.AddOrModifyModelAsync(_mealModel);
-            await _navigator.NavigateBack();
             ModelShed?.Invoke(this, new ModelShedEventArgs(_mealModel));
         }
     }
